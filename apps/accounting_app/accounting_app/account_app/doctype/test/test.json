@@ -1,0 +1,107 @@
+{
+ "creation": "2021-03-26 17:23:52.378793",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test",
+  "account_no",
+  "account_name",
+  "account_type",
+  "root_type",
+  "parent_test",
+  "rgt",
+  "lft",
+  "is_group",
+  "account_balance",
+  "old_parent"
+ ],
+ "fields": [
+  {
+   "fieldname": "test",
+   "fieldtype": "Data",
+   "label": "test",
+   "reqd": 1
+  },
+  {
+   "fieldname": "account_no",
+   "fieldtype": "Data",
+   "label": "account no",
+   "reqd": 1
+  },
+  {
+   "fieldname": "account_name",
+   "fieldtype": "Data",
+   "label": "account name"
+  },
+  {
+   "fieldname": "account_type",
+   "fieldtype": "Data",
+   "label": "account type"
+  },
+  {
+   "fieldname": "root_type",
+   "fieldtype": "Data",
+   "label": "root type"
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "label": "rgt"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "label": "lft"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "is group"
+  },
+  {
+   "fieldname": "account_balance",
+   "fieldtype": "Data",
+   "label": "account balance"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "old_Parent",
+   "options": "test"
+  },
+  {
+   "fieldname": "parent_test",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "parent test",
+   "options": "test"
+  }
+ ],
+ "is_tree": 1,
+ "modified": "2021-03-28 15:34:28.667788",
+ "modified_by": "Administrator",
+ "module": "Account App",
+ "name": "test",
+ "nsm_parent_field": "parent_test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

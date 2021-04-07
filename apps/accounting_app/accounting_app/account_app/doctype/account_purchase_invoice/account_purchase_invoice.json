@@ -1,0 +1,124 @@
+{
+ "autoname": "APN.#####",
+ "creation": "2021-03-22 21:36:54.134537",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "suplier_name",
+  "suplier_invoice_number",
+  "item_details",
+  "date",
+  "suplier_invoice_date",
+  "total_amount",
+  "payment_type",
+  "account_no",
+  "payment_mode",
+  "amended_from",
+  "quantity"
+ ],
+ "fields": [
+  {
+   "fetch_from": "Party Type",
+   "fieldname": "suplier_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Suplier name",
+   "options": "Party",
+   "reqd": 1
+  },
+  {
+   "fieldname": "suplier_invoice_number",
+   "fieldtype": "Data",
+   "label": "Suplier invoice number"
+  },
+  {
+   "fieldname": "item_details",
+   "fieldtype": "Link",
+   "label": "Item details",
+   "options": "Account Item"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "suplier_invoice_date",
+   "fieldtype": "Date",
+   "label": "Suplier invoice date"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Data",
+   "label": "Total amount"
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "label": "Payment type",
+   "options": "Pay\nReceive"
+  },
+  {
+   "fieldname": "account_no",
+   "fieldtype": "Link",
+   "label": "Account no",
+   "options": "Account ac"
+  },
+  {
+   "fieldname": "payment_mode",
+   "fieldtype": "Select",
+   "label": "Payment mode",
+   "options": "Credit\nCash\nCheck"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Account Purchase Invoice",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "no_copy": 1,
+   "options": "ACC-PINV-.YYYY.-",
+   "print_hide": 1,
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-04-06 15:08:57.118656",
+ "modified_by": "Administrator",
+ "module": "Account App",
+ "name": "Account Purchase Invoice",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,86 @@
+{
+ "autoname": "JE.####",
+ "creation": "2021-03-23 10:49:11.964209",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "journal_entry_no",
+  "account_details",
+  "party",
+  "posting_date",
+  "total_amount",
+  "entry_type",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "journal_entry_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Journal Entry no"
+  },
+  {
+   "fieldname": "account_details",
+   "fieldtype": "Link",
+   "label": "Account details",
+   "options": "Account ac",
+   "reqd": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Data",
+   "label": "Total amount"
+  },
+  {
+   "fieldname": "entry_type",
+   "fieldtype": "Select",
+   "label": "Entry type",
+   "options": "journal entry"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Account Journal Entry",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Data",
+   "label": "Party",
+   "options": "Party"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-03-31 16:39:40.041521",
+ "modified_by": "Administrator",
+ "module": "Account App",
+ "name": "Account Journal Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,101 @@
+{
+ "autoname": "AEN.#####",
+ "creation": "2021-03-23 10:43:33.398569",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "party_type",
+  "payment_type",
+  "payment_mode",
+  "date",
+  "purchase_invoice_no",
+  "sales_invoice_no",
+  "account_details",
+  "party_name",
+  "transactions_id",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Data",
+   "label": "Party type"
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Data",
+   "label": "Payment type"
+  },
+  {
+   "fieldname": "payment_mode",
+   "fieldtype": "Data",
+   "label": "Payment mode"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "account_details",
+   "fieldtype": "Data",
+   "label": "Account details"
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Link",
+   "label": "Party Name",
+   "options": "Party"
+  },
+  {
+   "fieldname": "transactions_id",
+   "fieldtype": "Data",
+   "label": "Transactions id"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Account Payment Entry",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "sales_invoice_no",
+   "fieldtype": "Link",
+   "label": "sales Invoice no",
+   "options": "Account Sales Invoice"
+  },
+  {
+   "fieldname": "purchase_invoice_no",
+   "fieldtype": "Data",
+   "label": "Purchase Invoice no"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-04-01 23:58:07.145366",
+ "modified_by": "Administrator",
+ "module": "Account App",
+ "name": "Account Payment Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
